@@ -1,3 +1,5 @@
+// Welcome test
+
 const assert = require('chai').assert;
 const app = require('../../assert')
 

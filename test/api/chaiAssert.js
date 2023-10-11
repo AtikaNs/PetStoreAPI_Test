@@ -1,20 +1,22 @@
 const {expect} = require('chai')
 const request = require('supertest')
 const baseUrl = require('../../environment')
+const DATA = require('../../data/userData.js')
+
+describe('Get Request Example', () => {
+    const response = request(baseUrl)
+    .get('/store/inventory')
+    
+    it('response status equal to 200', async() => {
+        // Check response status equal to 200
+        expect((await response).status).to.equal(200)
+    })
+})
 
 describe('Post Request Example', () => {
-    const response = request('https://petstore.swagger.io/v2')
+    const response = request(baseUrl)
     .post('/user')
-    .send({
-        "id": 12365,
-        "username": "haha3",
-        "firstName": "he",
-        "lastName": "he",
-        "email": "hihehe@gmail.com",
-        "password": "trying",
-        "phone": "6274",
-        "userStatus": 1
-    })
+    .send(DATA.CREATE_USERDATA)
 
     it('response status equal to 200', async() => {
         // Check response status equal to 200
@@ -27,5 +29,5 @@ describe('Post Request Example', () => {
     })
 
     //Reporting in mochawesome
-
+    //npx mocha --spec test/api/chaiAssert.js --reporter mochawesome
 })
