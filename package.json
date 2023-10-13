@@ -4,6 +4,7 @@
   "description": "mocha chai PetStore test",
   "main": "index.js",
   "scripts": {
+    "test PetStore": "npx mocha --spec test/api/chaiAssert.js --reporter mochawesome",
     "welcome": "mocha test/api/welcomeTest.js",
     "test get": "mocha test/api/getExample.js",
     "test post": "mocha test/api/postExample.js",
@@ -11,7 +12,10 @@
     "add Pet": "mocha test/api/pet/addPet.js",
     "get Pet Data": "mocha test/api/pet/getPetData.js",
     "update Pet": "mocha test/api/pet/updatePet.js",
-    "delete Pet": "mocha test/api/pet/addPet.js"
+    "delete Pet": "mocha test/api/pet/addPet.js",
+    "create Order": "mocha test/api/store/createOrder.js",
+    "get Order": "mocha test/api/store/getOrder.js",
+    "delete Order": "mocha test/api/store/deleteOrder.js"
   },
   "repository": {
     "type": "git",

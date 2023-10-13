@@ -5,9 +5,9 @@ const baseUrl = require('../../../environment')
 const DATA = require('../../../data/petData.js')
 
 describe('Add Pet Data', () => {
-    it('Success update Pet', async() => {
+    it('Success add Pet', async() => {
         const response = request(baseUrl)
         .post('/pet')
-        .send(DATA.UPDATE_PET)
+        .send(DATA.CREATE_PET_DATA)
     })
 })

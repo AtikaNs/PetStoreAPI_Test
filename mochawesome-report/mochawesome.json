@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 3,
+    "suites": 9,
+    "tests": 18,
     "passes": 0,
     "pending": 0,
-    "failures": 3,
-    "start": "2023-10-11T15:18:12.715Z",
-    "end": "2023-10-11T15:18:18.869Z",
-    "duration": 6154,
-    "testsRegistered": 3,
+    "failures": 18,
+    "start": "2023-10-13T02:41:13.190Z",
+    "end": "2023-10-13T02:41:51.497Z",
+    "duration": 38307,
+    "testsRegistered": 18,
     "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cd43f5b7-7024-42e3-9b86-5e7ac8da7545",
+      "uuid": "c119c913-26fc-4dc7-87a0-088ddda4b88a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f4358d39-b7e8-4255-b1fb-1e1e18ba656e",
+          "uuid": "66ead9e3-b5e8-4619-af59-a8da9e175f25",
           "title": "Get Request Example",
           "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
           "file": "\\test\\api\\chaiAssert.js",
@@ -38,7 +38,7 @@
               "title": "response status equal to 200",
               "fullTitle": "Get Request Example response status equal to 200",
               "timedOut": true,
-              "duration": 2004,
+              "duration": 2039,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,30 @@
                 "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
                 "diff": null
               },
-              "uuid": "e6ca79c4-acbf-40a3-bd0a-662985959219",
-              "parentUUID": "f4358d39-b7e8-4255-b1fb-1e1e18ba656e",
+              "uuid": "5991e444-fc09-4b10-a3fc-ea03c1db9ab3",
+              "parentUUID": "66ead9e3-b5e8-4619-af59-a8da9e175f25",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to have property",
+              "fullTitle": "Get Request Example response body to have property",
+              "timedOut": true,
+              "duration": 2016,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`available`)\nexpect((await response).body).to.haveOwnProperty(`unavailable`)\nexpect((await response).body).to.haveOwnProperty(`pending`)\nexpect((await response).body).to.haveOwnProperty(`status`)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "0789e0f0-aa8f-40d2-87c4-c73346a89043",
+              "parentUUID": "66ead9e3-b5e8-4619-af59-a8da9e175f25",
               "isHook": false,
               "skipped": false
             }
@@ -60,17 +82,18 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e6ca79c4-acbf-40a3-bd0a-662985959219"
+            "5991e444-fc09-4b10-a3fc-ea03c1db9ab3",
+            "0789e0f0-aa8f-40d2-87c4-c73346a89043"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2004,
+          "duration": 4055,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "4b8d3f59-629f-49d3-9ded-fce207c8aadf",
+          "uuid": "163da44f-7d2e-4bf2-bcc0-a4fccdf84896",
           "title": "Post Request Example",
           "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
           "file": "\\test\\api\\chaiAssert.js",
@@ -81,7 +104,7 @@
               "title": "response status equal to 200",
               "fullTitle": "Post Request Example response status equal to 200",
               "timedOut": true,
-              "duration": 2010,
+              "duration": 2013,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -94,8 +117,8 @@
                 "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
                 "diff": null
               },
-              "uuid": "3be37d47-8547-466f-bde4-e61156fe70eb",
-              "parentUUID": "4b8d3f59-629f-49d3-9ded-fce207c8aadf",
+              "uuid": "77ed3496-ef94-4d57-875a-7782a61b52c5",
+              "parentUUID": "163da44f-7d2e-4bf2-bcc0-a4fccdf84896",
               "isHook": false,
               "skipped": false
             },
@@ -103,7 +126,7 @@
               "title": "response body to haveOwnProperty",
               "fullTitle": "Post Request Example response body to haveOwnProperty",
               "timedOut": true,
-              "duration": 2014,
+              "duration": 2082,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -116,8 +139,8 @@
                 "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
                 "diff": null
               },
-              "uuid": "8e79c943-b936-4366-bbd6-9d242dd36ae9",
-              "parentUUID": "4b8d3f59-629f-49d3-9ded-fce207c8aadf",
+              "uuid": "54af5a66-ce5a-400c-b5b7-c6c9e8253662",
+              "parentUUID": "163da44f-7d2e-4bf2-bcc0-a4fccdf84896",
               "isHook": false,
               "skipped": false
             }
@@ -125,12 +148,474 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "3be37d47-8547-466f-bde4-e61156fe70eb",
-            "8e79c943-b936-4366-bbd6-9d242dd36ae9"
+            "77ed3496-ef94-4d57-875a-7782a61b52c5",
+            "54af5a66-ce5a-400c-b5b7-c6c9e8253662"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4095,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8dec51e3-a274-485a-b85a-abb12a631c2f",
+          "title": "add Pet test",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "add Pet test response status equal to 200",
+              "timedOut": true,
+              "duration": 2003,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "602f42de-4b5a-477d-b883-4a4a50dfd9e8",
+              "parentUUID": "8dec51e3-a274-485a-b85a-abb12a631c2f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "add Pet test response body to haveOwnProperty",
+              "timedOut": true,
+              "duration": 2001,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expect the body response has value\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "43e7fb73-701a-4c94-84db-6989797807d7",
+              "parentUUID": "8dec51e3-a274-485a-b85a-abb12a631c2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "602f42de-4b5a-477d-b883-4a4a50dfd9e8",
+            "43e7fb73-701a-4c94-84db-6989797807d7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4004,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "06aa6c5f-5aac-4fef-811d-21a763a425ae",
+          "title": "get Pet data",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "get Pet data response status equal to 200",
+              "timedOut": true,
+              "duration": 2044,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "d2a36777-1a18-4617-b93a-82be4e0df031",
+              "parentUUID": "06aa6c5f-5aac-4fef-811d-21a763a425ae",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to have property",
+              "fullTitle": "get Pet data response body to have property",
+              "timedOut": true,
+              "duration": 2084,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`available`)\nexpect((await response).body).to.haveOwnProperty(`pending`)\nexpect((await response).body).to.haveOwnProperty(`sold`)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "4f6b5bf3-3160-4369-b964-1d827d7d1741",
+              "parentUUID": "06aa6c5f-5aac-4fef-811d-21a763a425ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d2a36777-1a18-4617-b93a-82be4e0df031",
+            "4f6b5bf3-3160-4369-b964-1d827d7d1741"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4128,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0ce29432-1d20-4479-a3a1-4431780e6e1a",
+          "title": "update Pet data",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "update Pet data response status equal to 200",
+              "timedOut": true,
+              "duration": 2001,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "7ce715d1-e148-4607-98d4-e716215a3798",
+              "parentUUID": "0ce29432-1d20-4479-a3a1-4431780e6e1a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "update Pet data response body to haveOwnProperty",
+              "timedOut": true,
+              "duration": 2023,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expect the body response has value\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "7036d527-f4e3-4df6-b320-84d30fed4b0a",
+              "parentUUID": "0ce29432-1d20-4479-a3a1-4431780e6e1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7ce715d1-e148-4607-98d4-e716215a3798",
+            "7036d527-f4e3-4df6-b320-84d30fed4b0a"
           ],
           "pending": [],
           "skipped": [],
           "duration": 4024,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "43cc3b37-c215-4d3e-ad67-3d750d4fd2f2",
+          "title": "delete Pet data",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "delete Pet data response status equal to 200",
+              "timedOut": true,
+              "duration": 2007,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "ce89394f-856b-4f77-85dd-d3afbbfe7321",
+              "parentUUID": "43cc3b37-c215-4d3e-ad67-3d750d4fd2f2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "delete Pet data response body to haveOwnProperty",
+              "timedOut": true,
+              "duration": 2013,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expect the body response has value\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "60e1d9b8-4692-419e-8e68-e13ea2b3d9dc",
+              "parentUUID": "43cc3b37-c215-4d3e-ad67-3d750d4fd2f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ce89394f-856b-4f77-85dd-d3afbbfe7321",
+            "60e1d9b8-4692-419e-8e68-e13ea2b3d9dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4020,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "56fe8481-8650-449c-8a53-4a594c2c47a5",
+          "title": "create Order",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "create Order response status equal to 200",
+              "timedOut": true,
+              "duration": 2042,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "a5a64db0-b177-49f1-a22e-4d6d23bb5c22",
+              "parentUUID": "56fe8481-8650-449c-8a53-4a594c2c47a5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "create Order response body to haveOwnProperty",
+              "timedOut": true,
+              "duration": 2007,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expect the body response has value\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "82d018e7-e8fa-40e8-a2d0-29511122f328",
+              "parentUUID": "56fe8481-8650-449c-8a53-4a594c2c47a5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a5a64db0-b177-49f1-a22e-4d6d23bb5c22",
+            "82d018e7-e8fa-40e8-a2d0-29511122f328"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4049,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2412212b-16cb-43d2-88b6-1bb4d7b8f79b",
+          "title": "get Order by Id",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "get Order by Id response status equal to 200",
+              "timedOut": true,
+              "duration": 2005,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "e94cd6f6-a172-49b4-9e32-41a92b66d63f",
+              "parentUUID": "2412212b-16cb-43d2-88b6-1bb4d7b8f79b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to have property",
+              "fullTitle": "get Order by Id response body to have property",
+              "timedOut": true,
+              "duration": 2034,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty(`placed`)\nexpect((await response).body).to.haveOwnProperty(`approved`)\nexpect((await response).body).to.haveOwnProperty(`delivered`)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "f8b9d621-3d59-4a55-a0ea-b528948d50a1",
+              "parentUUID": "2412212b-16cb-43d2-88b6-1bb4d7b8f79b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e94cd6f6-a172-49b4-9e32-41a92b66d63f",
+            "f8b9d621-3d59-4a55-a0ea-b528948d50a1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4039,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9dda95e4-bfdd-438e-88a2-aa11d68dd2cc",
+          "title": "delete Order",
+          "fullFile": "E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "delete Order response status equal to 200",
+              "timedOut": true,
+              "duration": 2076,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Check response status equal to 200\nexpect((await response).status).to.equal(200)",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "bcac398b-b5f2-4413-9478-c816ed2556cf",
+              "parentUUID": "9dda95e4-bfdd-438e-88a2-aa11d68dd2cc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOwnProperty",
+              "fullTitle": "delete Order response body to haveOwnProperty",
+              "timedOut": true,
+              "duration": 2012,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Expect the body response has value\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (E:\\Coding Things\\PetStoreAPI_Test\\test\\api\\chaiAssert.js)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)",
+                "diff": null
+              },
+              "uuid": "8624ad33-2568-4b34-b029-826da9745e53",
+              "parentUUID": "9dda95e4-bfdd-438e-88a2-aa11d68dd2cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bcac398b-b5f2-4413-9478-c816ed2556cf",
+            "8624ad33-2568-4b34-b029-826da9745e53"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4088,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
