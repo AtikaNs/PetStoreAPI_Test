@@ -18,7 +18,7 @@ git clone https://github.com/AtikaNs/PetStoreAPI_Test.git
 npm install
 ```
 
-3. Run mocha PetStore test
+3. Run mocha PetStore test then open mochawesome.html file
 ```
 npm run 'test PetStore'
 ```
@@ -30,7 +30,7 @@ npm run test '{path/to/file}.js
 
 or using script on package.json file
 
-**For the test case documentation, you can refere to this site**
+**For the test case documentation, you can refer to this site**
 ```
 https://docs.google.com/spreadsheets/d/1QKf30pnuKolH11EW4hS3Kd961kPcE_Lv4AjVOHk8K60/edit?usp=sharing
 ```
