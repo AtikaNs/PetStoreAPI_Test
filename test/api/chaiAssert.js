@@ -27,9 +27,9 @@ describe('Post Request Example', () => {
     .post('/user')
     .send(DATA.CREATE_USERDATA)
 
-    it('response status equal to 200', async() => {
-        // Check response status equal to 200
-        expect((await response).status).to.equal(200)
+    it('response status equal to 201', async() => {
+        // Check response status equal to 201
+        expect((await response).status).to.equal(201)
     })
 
     it('response body to haveOwnProperty', async() => {
@@ -43,9 +43,9 @@ describe('add Pet test', () => {
     .post('/pet')
     .send(DATAPET.CREATE_PET_DATA)
 
-    it('response status equal to 200', async() => {
+    it('response status equal to 201', async() => {
         // Check response status equal to 200
-        expect((await response).status).to.equal(200)
+        expect((await response).status).to.equal(201)
     })
 
     it('response body to haveOwnProperty', async() => {
@@ -105,9 +105,9 @@ describe('create Order', () => {
     .post('/store/order')
     .send(DATAORDER.CREATE_ORDER_DATA)
 
-    it('response status equal to 200', async() => {
-        // Check response status equal to 200
-        expect((await response).status).to.equal(200)
+    it('response status equal to 201', async() => {
+        // Check response status equal to 201
+        expect((await response).status).to.equal(201)
     })
 
     it('response body to haveOwnProperty', async() => {
