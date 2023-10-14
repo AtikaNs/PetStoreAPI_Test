@@ -71,7 +71,7 @@ describe('get Pet data', () => {
 
 describe('update Pet data', () => {
     const response = request(baseUrl)
-    .post('/pet')
+    .put('/pet')
     .send(DATAPET.UPDATE_PET)
 
     it('response status equal to 200', async() => {

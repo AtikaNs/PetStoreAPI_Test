@@ -10,7 +10,7 @@
     "test post": "mocha test/api/postExample.js",
     "chai Assert": "mocha test/api/chaiAssert.js",
     "add Pet": "mocha test/api/pet/addPet.js",
-    "get Pet Data": "mocha test/api/pet/getPetData.js",
+    "get Pet": "mocha test/api/pet/getPetData.js",
     "update Pet": "mocha test/api/pet/updatePet.js",
     "delete Pet": "mocha test/api/pet/addPet.js",
     "create Order": "mocha test/api/store/createOrder.js",

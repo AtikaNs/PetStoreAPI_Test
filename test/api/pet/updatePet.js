@@ -7,7 +7,7 @@ const DATA = require('../../../data/petData.js')
 describe('Update Pet Data', () => {
     it('Success update Pet', async() => {
         const response = request(baseUrl)
-        .post('/pet')
+        .put('/pet')
         .send(DATA.UPDATE_PET)
     })
 })
