@@ -9,5 +9,8 @@ describe('Create Order Data', () => {
         const response = request(baseUrl)
         .post('/store/order')
         .send(DATA.CREATE_ORDER_DATA)
+
+        console.log((await response).status)
+        console.log((await response).body)
     })
 })

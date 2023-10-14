@@ -17,5 +17,8 @@ describe('Post Request example', () => {
             "phone": "6274",
             "userStatus": 1
         })
+
+        console.log((await response).status)
+        console.log((await response).body)
     })
 })

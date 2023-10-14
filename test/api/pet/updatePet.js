@@ -9,5 +9,8 @@ describe('Update Pet Data', () => {
         const response = request(baseUrl)
         .put('/pet')
         .send(DATA.UPDATE_PET)
+
+        console.log((await response).status)
+        console.log((await response).body)
     })
 })
