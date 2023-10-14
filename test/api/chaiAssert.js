@@ -74,9 +74,10 @@ describe('update Pet data', () => {
     .put('/pet')
     .send(DATAPET.UPDATE_PET)
 
-    it('response status equal to 200', async() => {
-        // Check response status equal to 200
+    it('response status equal to 200 or 201', async() => {
+        // Check response status equal to 200 or 201
         expect((await response).status).to.equal(200)
+        expect((await response).status).to.equal(201)
     })
 
     it('response body to haveOwnProperty', async() => {
