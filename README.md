@@ -30,7 +30,8 @@ npm run test '{path/to/file}.js
 
 or using script on package.json file
 
-**For the test case documentation, you can refer to this [site] (https://docs.google.com/spreadsheets/d/1QKf30pnuKolH11EW4hS3Kd961kPcE_Lv4AjVOHk8K60/edit?usp=sharing)**
+**For the test case documentation, you can refer to this site**
+https://docs.google.com/spreadsheets/d/1QKf30pnuKolH11EW4hS3Kd961kPcE_Lv4AjVOHk8K60/edit?usp=sharing
 
 
 <h3 align="center">Feel free to reach me if you have any questions or want some collaboration, thank you!</h3>
