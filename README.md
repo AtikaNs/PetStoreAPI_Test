@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning **Project Management and Software Quality Assurance**
 
-- If you want to see this project in **Postman API Network** you can refer to **[this link](https://www.postman.com/telecoms-cosmonaut-96560835/workspace/atika-s-postman-projects/collection/30416939-9bae6ac8-a210-413c-8804-b4f49db46a20?action=share&creator=30416939&active-environment=30416939-431f79cf-9634-4e63-b897-2f6aa1a16073)**.
+- If you want to see this project in **Postman API Network** you can refer to **[this link](https://www.postman.com/tikatikaa/workspace/atika-s-postman-projects/collection/30416939-9bae6ac8-a210-413c-8804-b4f49db46a20?action=share&creator=30416939&active-environment=30416939-431f79cf-9634-4e63-b897-2f6aa1a16073)**.
 - For the **Test Case Documentation**, you can refer to **[this site](https://docs.google.com/spreadsheets/d/1QKf30pnuKolH11EW4hS3Kd961kPcE_Lv4AjVOHk8K60/edit?usp=sharing)**.
 
 **To run this repository**
